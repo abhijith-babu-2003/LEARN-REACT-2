@@ -2,6 +2,8 @@ import { lazy,Suspense } from "react";
 import Contact from "./Component8/Contact";
 import Home from "./Component8/Home";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import DataFetch from "./Component9/DataFetch";
+import ResizeComponent from "./Resize/ResizeComponent";
 const LazyAbout = lazy(() => import("./Component8/About"));
 
 function App() {
@@ -35,7 +37,7 @@ function App() {
 
       {/* lazy loading examples----------------------------------------------------------- */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <nav>
         <Link to={"/"}>Home</Link>
         <Link to={"/about"}>ABOUT</Link>
@@ -49,7 +51,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
  </Suspense>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+{/* data axios use */}
+      {/* <DataFetch/> */}
+      
+          {/* <ResizeComponent/> */}
     </>
   );
 }

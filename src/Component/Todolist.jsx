@@ -30,7 +30,7 @@ function Todolist() {
 
   <ul>
     {tods.map((todo,id)=>(
-      <li key={id}>{todo.text}
+      <li key={id}>{todo}
        <button onClick={()=>dispatch({type:'DELETE',payload:todo.id})}>DELETE</button>
       </li>
     ))}
